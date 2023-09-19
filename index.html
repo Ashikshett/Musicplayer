@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Spotify-like Music Player</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Browse</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Library</a></li>
+                </ul>
+            </nav>
+            <div id="user-profile">
+                <img src="u1.jpeg" alt="User Avatar">
+                <span>User Name</span>
+            </div>
+        </header>
+
+        <main>
+            <section id="search-content">
+                <h2>Search</h2>
+                <input type="text" id="search-input" placeholder="Search for music...">
+                <ul id="search-results">
+                </ul>
+            </section>
+            
+            <div class="album-cover">
+                <img src="c1.jpeg" alt="Album Cover" id="album-cover-image">
+            </div>
+            
+           
+            <section id="playlist">
+                <ul>
+                    <li class="playlist-item">
+                        <span>Naa Ready (Leo)_64-(MastiNew).mp3</span>
+                    </li>
+                    <li class="playlist-item">
+                        <span>Song 2</span>
+                    </li>
+                    <li class="playlist-item">
+                        <span>Tu Hai To Mujhe Phir Aur Kya Chahiye_64(PagalWorld.com.se).mp3</span>
+                    </li>
+                    <!-- Add more playlist items as needed -->
+                </ul>
+            </section>
+            
+            <section id="controls">
+                <div class="controls">
+                    <button id="prev-btn">Previous</button>
+                    <button id="play-pause-btn">Play</button>
+                    <button id="next-btn">Next</button>
+                </div>
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
